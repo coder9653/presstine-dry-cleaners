@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Presstine Dry Cleaners | Boca Raton Eco-Friendly Dry Cleaning</title>
+    <meta name="description" content="Learn about Presstine Dry Cleaners, Boca Raton's trusted eco-friendly dry cleaner with 55+ years of experience. Formerly Addison Court Cleaners.">
+    <link rel="icon" type="image/png" href="https://presstinedrycleaners.com/wp-content/uploads/2025/08/Pristine-Cleaners-1024x1024.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0372A8;
+            --primary-dark: #025a85;
+            --primary-light: #E8F4FD;
+            --secondary: #4A90D9;
+            --dark: #1a1a2e;
+            --white: #ffffff;
+            --gray-light: #f8f9fa;
+            --gray: #6c757d;
+            --text: #333333;
+            --gradient: linear-gradient(135deg, #0372A8 0%, #025a85 100%);
+            --shadow: 0 10px 40px rgba(3, 114, 168, 0.15);
+            --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(3, 114, 168, 0.2);
+            --radius: 16px;
+            --radius-sm: 10px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header {
+            background: var(--primary-light);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+
+        .logo-section { display: flex; align-items: center; gap: 15px; }
+        .logo-section img { height: 60px; width: auto; }
+        .logo-section span { font-size: 22px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; }
+
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        nav a:hover { color: var(--primary); }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+        nav a:hover::after { width: 100%; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 28px; height: 3px; background: var(--primary); border-radius: 3px; transition: 0.3s; }
+
+        /* Hero */
+        .hero {
+            background: var(--gradient);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-content { position: relative; z-index: 1; text-align: center; color: var(--white); }
+        .hero h1 { font-size: 48px; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 20px; opacity: 0.95; max-width: 700px; margin: 0 auto 35px; font-weight: 300; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); }
+
+        /* Sections */
+        section { padding: 80px 0; }
+
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .section-title span { color: var(--primary); }
+        .section-subtitle { font-size: 18px; color: var(--gray); max-width: 700px; margin: 0 auto; }
+
+        /* About Content */
+        .about-content-section { background: var(--gray-light); }
+        .about-box {
+            background: var(--white);
+            padding: 50px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .about-box p { color: var(--gray); font-size: 17px; margin-bottom: 20px; line-height: 1.8; }
+        .about-box p:last-child { margin-bottom: 0; }
+        .about-box a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .about-box a:hover { text-decoration: underline; }
+
+        /* Commitment Section */
+        .commitment-section { background: var(--white); }
+        .commitment-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .commitment-card {
+            background: var(--gray-light);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid #e9ecef;
+        }
+        .commitment-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); }
+        .commitment-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        .commitment-icon i { font-size: 32px; color: var(--primary); }
+        .commitment-card h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 15px; }
+        .commitment-card p { color: var(--gray); font-size: 15px; line-height: 1.7; }
+
+        /* Citations Section */
+        .citations-section { background: var(--gray-light); }
+        .citations-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .citation-link {
+            background: var(--white);
+            padding: 15px 20px;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            border: 1px solid #e9ecef;
+            word-break: break-all;
+        }
+        .citation-link:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+        .citation-link i { flex-shrink: 0; }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 50px 0 30px;
+        }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; }
+        .footer-logo { display: flex; align-items: center; gap: 15px; }
+        .footer-logo img { height: 50px; }
+        .footer-logo span { font-size: 20px; font-weight: 700; }
+        .footer-nav { display: flex; gap: 30px; }
+        .footer-nav a { color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 15px; transition: color 0.3s; }
+        .footer-nav a:hover { color: var(--white); }
+        .footer-social { display: flex; gap: 15px; }
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .footer-social a:hover { background: var(--primary); transform: translateY(-3px); }
+        .footer-bottom { text-align: center; padding-top: 30px; margin-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        .footer-bottom p { color: rgba(255, 255, 255, 0.6); font-size: 14px; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .citations-grid { grid-template-columns: repeat(2, 1fr); }
+            .commitment-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0; right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: var(--shadow-sm);
+            }
+            nav ul.active { display: flex; }
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 16px; }
+            .section-title { font-size: 30px; }
+            .citations-grid { grid-template-columns: 1fr; }
+            .commitment-grid { grid-template-columns: 1fr; }
+            .about-box { padding: 30px; }
+            .footer-content { flex-direction: column; text-align: center; }
+            .footer-nav { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://presstinedrycleaners.com/wp-content/uploads/2025/08/Pristine-Cleaners-1024x1024.webp" alt="Presstine Dry Cleaners Logo">
+                    <span>Presstine Dry Cleaners</span>
+                </div>
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>About Presstine Dry Cleaners</h1>
+                <p>Boca Raton's trusted family-owned dry cleaner with 55+ years of combined experience in professional garment care.</p>
+                <a href="tel:+15619990043" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Call (561) 999-0043
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content-section">
+        <div class="container">
+            <div class="about-box">
+                <p>Presstine Dry Cleaners is a family-owned, eco-friendly dry cleaning service based in Boca Raton, Florida. Formerly known as Addison Court Cleaners, our team brings over 55 years of combined dry cleaning experience to serve our Palm Beach County community.</p>
+                <p>Our owner, John Baleno, is a certified environmental dry cleaner with extensive credentials including OSHA certification, comprehensive spotting certification, and textiles and fibers certification. He personally oversees quality on every order and can train hands-on in all phases of pressing and dry cleaning.</p>
+                <p>We are committed to using only PERC-free, non-toxic cleaning methods that are safer for your clothes, your family, and the environment. Our eco-friendly processes deliver the same professional-grade clean without the harsh chemicals, leaving your garments softer and fresher.</p>
+                <p>Visit our <a href="index.html">homepage</a> to learn more about our services and schedule your free pickup and delivery.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section class="commitment-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Promise</div>
+                <h2 class="section-title">Our <span>Commitment</span> to You</h2>
+                <p class="section-subtitle">What drives us every day at Presstine Dry Cleaners</p>
+            </div>
+            <div class="commitment-grid">
+                <div class="commitment-card">
+                    <div class="commitment-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly Excellence</h3>
+                    <p>We use 100% PERC-free, non-toxic cleaning methods that protect your garments, your health, and our environment.</p>
+                </div>
+                <div class="commitment-card">
+                    <div class="commitment-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Personal Attention</h3>
+                    <p>As a family-owned business, we treat every customer like family. Owner John Baleno personally oversees quality control.</p>
+                </div>
+                <div class="commitment-card">
+                    <div class="commitment-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>No Hidden Fees</h3>
+                    <p>Transparent pricing with no surprises. We provide upfront quotes and honest communication on every order.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citations Section -->
+    <section class="citations-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Find Us Online</div>
+                <h2 class="section-title">Our <span>Online</span> Presence</h2>
+                <p class="section-subtitle">Find Presstine Dry Cleaners across the web</p>
+            </div>
+            <div class="citations-grid">
+                <a href="https://www.facebook.com/people/Presstine-Dry-Cleaners/61584145975563/" target="_blank" class="citation-link"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/presstinedrycleaners/" target="_blank" class="citation-link"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.yelp.com/biz/presstine-dry-cleaners-boca-raton" target="_blank" class="citation-link"><i class="fab fa-yelp"></i> Yelp</a>
+                <a href="https://www.mapquest.com/us/florida/presstine-dry-cleaners-274519539" target="_blank" class="citation-link"><i class="fas fa-map"></i> MapQuest</a>
+                <a href="https://nextdoor.com/pages/presstine-dry-cleaners/" target="_blank" class="citation-link"><i class="fas fa-home"></i> Nextdoor</a>
+                <a href="https://citysquares.com/b/addison-court-cleaners-5472092" target="_blank" class="citation-link"><i class="fas fa-building"></i> CitySquares</a>
+                <a href="https://www.callupcontact.com/b/businessprofile/Presstine_Dry_Cleaners/9974935" target="_blank" class="citation-link"><i class="fas fa-phone"></i> CallUpContact</a>
+                <a href="https://www.brownbook.net/business/54824941/presstine-dry-cleaners" target="_blank" class="citation-link"><i class="fas fa-book"></i> Brownbook</a>
+                <a href="https://www.blinx.biz/admin/pages/preview/509941" target="_blank" class="citation-link"><i class="fas fa-link"></i> Blinx</a>
+                <a href="https://www.storeboard.com/presstinedrycleaners" target="_blank" class="citation-link"><i class="fas fa-store"></i> Storeboard</a>
+                <a href="https://www.topgoogle.com/listing/presstine-dry-cleaners/" target="_blank" class="citation-link"><i class="fab fa-google"></i> TopGoogle</a>
+                <a href="https://www.addonbiz.com/listing/17940-n-military-trl-boca-raton-fl-33496-united-states-presstine-dry-cleaners/" target="_blank" class="citation-link"><i class="fas fa-plus"></i> AddonBiz</a>
+                <a href="https://www.supplyautonomy.com/presstinedrycleaners.us" target="_blank" class="citation-link"><i class="fas fa-industry"></i> SupplyAutonomy</a>
+                <a href="http://www.askmap.net/location/7732571/united-states/presstine-dry-cleaners" target="_blank" class="citation-link"><i class="fas fa-map-marker-alt"></i> AskMap</a>
+                <a href="https://bizidex.com/en/presstine-dry-cleaners-dry-cleaners-876789" target="_blank" class="citation-link"><i class="fas fa-briefcase"></i> Bizidex</a>
+                <a href="https://ezlocal.com/fl/boca-raton/dry-cleaner/0919530605" target="_blank" class="citation-link"><i class="fas fa-location-arrow"></i> EZLocal</a>
+                <a href="https://freebusinessdirectory.com//search_res_show.php?co=660892" target="_blank" class="citation-link"><i class="fas fa-list"></i> FreeBizDirectory</a>
+                <a href="https://localitybiz.com/38840381/presstine-dry-cleaners-boca-raton" target="_blank" class="citation-link"><i class="fas fa-city"></i> LocalityBiz</a>
+                <a href="https://trueen.com/business/listing/presstine-dry-cleaners/708664" target="_blank" class="citation-link"><i class="fas fa-check-circle"></i> Trueen</a>
+                <a href="https://www.cybo.com/US-biz/presstine-dry-cleaners" target="_blank" class="citation-link"><i class="fas fa-globe"></i> Cybo</a>
+                <a href="https://www.youbiz.com/listing/presstine-dry.html" target="_blank" class="citation-link"><i class="fas fa-user"></i> YouBiz</a>
+                <a href="https://www.americansearch.info/boca-raton/clothing-accessories/presstine-dry-cleaners" target="_blank" class="citation-link"><i class="fas fa-search"></i> AmericanSearch</a>
+                <a href="https://us.enrollbusiness.com/BusinessProfile/7725770/Presstine%20Dry%20Cleaners" target="_blank" class="citation-link"><i class="fas fa-clipboard-list"></i> EnrollBusiness</a>
+                <a href="https://www.a-zbusinessfinder.com/business-directory/Presstine-Dry-Cleaners-Boca-Raton-Florida-USA/34455917/" target="_blank" class="citation-link"><i class="fas fa-search-location"></i> A-Z Business</a>
+                <a href="https://www.find-us-here.com/businesses/Presstine-Dry-Cleaners-Boca-Raton-Florida-USA/34455917/" target="_blank" class="citation-link"><i class="fas fa-thumbtack"></i> Find Us Here</a>
+                <a href="https://www.freelistingusa.com/listings/presstine-dry-cleaners" target="_blank" class="citation-link"><i class="fas fa-flag-usa"></i> FreeListingUSA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://presstinedrycleaners.com/wp-content/uploads/2025/08/Pristine-Cleaners-1024x1024.webp" alt="Presstine Dry Cleaners">
+                    <span>Presstine Dry Cleaners</span>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/people/Presstine-Dry-Cleaners/61584145975563/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/presstinedrycleaners/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.yelp.com/biz/presstine-dry-cleaners-boca-raton" target="_blank" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Presstine Dry Cleaners. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

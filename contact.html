@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Presstine Dry Cleaners | Boca Raton FL</title>
+    <meta name="description" content="Contact Presstine Dry Cleaners in Boca Raton, FL. Call (561) 999-0043 or visit us at 17940 N Military Trail. Free pickup and delivery available.">
+    <link rel="icon" type="image/png" href="https://presstinedrycleaners.com/wp-content/uploads/2025/08/Pristine-Cleaners-1024x1024.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0372A8;
+            --primary-dark: #025a85;
+            --primary-light: #E8F4FD;
+            --secondary: #4A90D9;
+            --dark: #1a1a2e;
+            --white: #ffffff;
+            --gray-light: #f8f9fa;
+            --gray: #6c757d;
+            --text: #333333;
+            --gradient: linear-gradient(135deg, #0372A8 0%, #025a85 100%);
+            --shadow: 0 10px 40px rgba(3, 114, 168, 0.15);
+            --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(3, 114, 168, 0.2);
+            --radius: 16px;
+            --radius-sm: 10px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header {
+            background: var(--primary-light);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+
+        .logo-section { display: flex; align-items: center; gap: 15px; }
+        .logo-section img { height: 60px; width: auto; }
+        .logo-section span { font-size: 22px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; }
+
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        nav a:hover { color: var(--primary); }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+        nav a:hover::after { width: 100%; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 28px; height: 3px; background: var(--primary); border-radius: 3px; transition: 0.3s; }
+
+        /* Hero */
+        .hero {
+            background: var(--gradient);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-content { position: relative; z-index: 1; text-align: center; color: var(--white); }
+        .hero h1 { font-size: 48px; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 20px; opacity: 0.95; max-width: 700px; margin: 0 auto 35px; font-weight: 300; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); }
+
+        /* Sections */
+        section { padding: 80px 0; }
+
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .section-title span { color: var(--primary); }
+        .section-subtitle { font-size: 18px; color: var(--gray); max-width: 700px; margin: 0 auto; }
+
+        /* Contact Content Section */
+        .contact-content-section { background: var(--gray-light); }
+        .contact-intro {
+            background: var(--white);
+            padding: 40px 50px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        .contact-intro p { color: var(--gray); font-size: 17px; margin-bottom: 15px; line-height: 1.8; }
+        .contact-intro p:last-child { margin-bottom: 0; }
+
+        /* Contact Grid */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+        .contact-info-card {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 45px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .contact-info-card h3 { font-size: 28px; margin-bottom: 30px; font-weight: 700; }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .contact-item:last-child { margin-bottom: 0; }
+        .contact-item i {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .contact-item-content strong {
+            display: block;
+            font-size: 14px;
+            opacity: 0.8;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .contact-item-content span,
+        .contact-item-content a {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+        }
+        .contact-item-content a:hover { text-decoration: underline; }
+
+        .hours-card {
+            background: var(--white);
+            padding: 45px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+        }
+        .hours-card h3 { font-size: 28px; color: var(--primary); margin-bottom: 30px; font-weight: 700; }
+        .hours-list { list-style: none; }
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .hours-list li:last-child { border-bottom: none; }
+        .hours-list .day { font-weight: 600; color: var(--dark); }
+        .hours-list .time { color: var(--gray); }
+        .hours-list .time.closed { color: #dc3545; font-weight: 600; }
+
+        /* Maps Section */
+        .maps-section { background: var(--white); }
+        .maps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .map-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e9ecef;
+        }
+        .map-card-header {
+            background: var(--primary-light);
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .map-card-header i { color: var(--primary); font-size: 20px; }
+        .map-card-header h4 { color: var(--primary); font-size: 16px; font-weight: 600; }
+        .map-card iframe { width: 100%; height: 400px; border: none; }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+        .action-card {
+            background: var(--gray-light);
+            padding: 35px;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid #e9ecef;
+        }
+        .action-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+            background: var(--white);
+        }
+        .action-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: all 0.3s;
+        }
+        .action-card:hover .action-icon { background: var(--primary); }
+        .action-icon i { font-size: 28px; color: var(--primary); transition: all 0.3s; }
+        .action-card:hover .action-icon i { color: var(--white); }
+        .action-card h4 { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+        .action-card p { color: var(--gray); font-size: 14px; margin-bottom: 20px; }
+        .action-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .action-btn:hover { background: var(--primary-dark); }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 50px 0 30px;
+        }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; }
+        .footer-logo { display: flex; align-items: center; gap: 15px; }
+        .footer-logo img { height: 50px; }
+        .footer-logo span { font-size: 20px; font-weight: 700; }
+        .footer-nav { display: flex; gap: 30px; }
+        .footer-nav a { color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 15px; transition: color 0.3s; }
+        .footer-nav a:hover { color: var(--white); }
+        .footer-social { display: flex; gap: 15px; }
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .footer-social a:hover { background: var(--primary); transform: translateY(-3px); }
+        .footer-bottom { text-align: center; padding-top: 30px; margin-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        .footer-bottom p { color: rgba(255, 255, 255, 0.6); font-size: 14px; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .quick-actions { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0; right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: var(--shadow-sm);
+            }
+            nav ul.active { display: flex; }
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 16px; }
+            .section-title { font-size: 30px; }
+            .contact-grid, .maps-grid { grid-template-columns: 1fr; }
+            .quick-actions { grid-template-columns: 1fr; }
+            .contact-intro { padding: 30px; }
+            .footer-content { flex-direction: column; text-align: center; }
+            .footer-nav { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://presstinedrycleaners.com/wp-content/uploads/2025/08/Pristine-Cleaners-1024x1024.webp" alt="Presstine Dry Cleaners Logo">
+                    <span>Presstine Dry Cleaners</span>
+                </div>
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Ready for pristine garment care? Reach out to schedule your free pickup and delivery or visit our Boca Raton location.</p>
+                <a href="tel:+15619990043" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Call (561) 999-0043
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-content-section">
+        <div class="container">
+            <div class="contact-intro">
+                <p>We would love to hear from you! Whether you have questions about our eco-friendly dry cleaning services, need to schedule a pickup, or want to learn more about our specialty garment care, our team is here to help.</p>
+                <p>Stop by our convenient Boca Raton location with a covered drive-through, or let us come to you with free pickup and delivery throughout Boca Raton and Delray Beach.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-building"></i>
+                        <div class="contact-item-content">
+                            <strong>Business Name</strong>
+                            <span>Presstine Dry Cleaners</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <strong>Address</strong>
+                            <span>17940 N Military Trl, Boca Raton, FL 33496</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-item-content">
+                            <strong>Phone</strong>
+                            <a href="tel:+15619990043">(561) 999-0043</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <strong>Email</strong>
+                            <a href="mailto:info@presstinedrycleaners.com">info@presstinedrycleaners.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hours-card">
+                    <h3>Our Working Hours</h3>
+                    <ul class="hours-list">
+                        <li><span class="day">Monday</span><span class="time">7:00 AM - 6:00 PM</span></li>
+                        <li><span class="day">Tuesday</span><span class="time">7:00 AM - 6:00 PM</span></li>
+                        <li><span class="day">Wednesday</span><span class="time">7:00 AM - 6:00 PM</span></li>
+                        <li><span class="day">Thursday</span><span class="time">7:00 AM - 6:00 PM</span></li>
+                        <li><span class="day">Friday</span><span class="time">7:00 AM - 6:00 PM</span></li>
+                        <li><span class="day">Saturday</span><span class="time">8:00 AM - 4:00 PM</span></li>
+                        <li><span class="day">Sunday</span><span class="time closed">Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p>Speak directly with our team</p>
+                    <a href="tel:+15619990043" class="action-btn">Call Now</a>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email Us</h4>
+                    <p>Send us your questions</p>
+                    <a href="mailto:info@presstinedrycleaners.com" class="action-btn">Send Email</a>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-directions"></i>
+                    </div>
+                    <h4>Get Directions</h4>
+                    <p>Visit our Boca Raton store</p>
+                    <a href="https://maps.app.goo.gl/cpT7pgFJRBWWDdCG7" target="_blank" class="action-btn">Open Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <section class="maps-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Location</div>
+                <h2 class="section-title">Find Us on <span>Google</span></h2>
+                <p class="section-subtitle">Located at the corner of Clint Moore Road and Military Trail</p>
+            </div>
+            <div class="maps-grid">
+                <div class="map-card">
+                    <div class="map-card-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>Google Maps</h4>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3657309.3190296227!2d-80.6833887!3d26.4689054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91fb579ac6799%3A0x8340a76667498a50!2sPresstine%20Dry%20Cleaners!5e0!3m2!1sen!2s!4v1776285249689!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map-card">
+                    <div class="map-card-header">
+                        <i class="fas fa-map"></i>
+                        <h4>Service Area Map</h4>
+                    </div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1FBH-kdmOZ5clFsgMr6-0suetYYKkrls&ehbc=2E312F" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://presstinedrycleaners.com/wp-content/uploads/2025/08/Pristine-Cleaners-1024x1024.webp" alt="Presstine Dry Cleaners">
+                    <span>Presstine Dry Cleaners</span>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/people/Presstine-Dry-Cleaners/61584145975563/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/presstinedrycleaners/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.yelp.com/biz/presstine-dry-cleaners-boca-raton" target="_blank" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Presstine Dry Cleaners. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
